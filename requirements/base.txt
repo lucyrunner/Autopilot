@@ -1,0 +1,26 @@
+# Core Dependencies for Autopilot Vision System
+# These packages are required for all environments (dev, prod, edge)
+
+# Deep Learning & Computer Vision
+opencv-python==4.8.0.76        # Computer vision library (lane detection, preprocessing)
+numpy==1.24.3                  # Numerical computing (array operations)
+torch==2.0.1                   # PyTorch (if needed for training)
+ultralytics==8.0.196          # YOLOv8 framework
+onnxruntime==1.15.1           # ONNX model inference (CPU)
+
+# API & Web Framework
+fastapi==0.103.1              # Modern async web framework
+uvicorn[standard]==0.23.2     # ASGI server for FastAPI
+pydantic==2.3.0               # Data validation
+pydantic-settings==2.0.3      # Settings management
+python-multipart==0.0.6       # File upload support
+aiofiles==23.2.1              # Async file operations
+
+# Message Queue
+redis==5.0.0                  # Redis client
+hiredis==2.2.3                # Redis protocol parser (faster)
+
+# Utilities
+python-dotenv==1.0.0          # Load environment variables from .env
+Pillow==10.0.0                # Image processing
+scipy==1.11.2                 # Scientific computing (for statistics)

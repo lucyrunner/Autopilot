@@ -1,0 +1,16 @@
+# Production-specific dependencies
+
+-r base.txt
+
+# Production Monitoring
+prometheus-client==0.17.1     # Metrics export for Prometheus
+sentry-sdk==1.32.0            # Error tracking and monitoring
+
+# Production Server
+gunicorn==21.2.0              # Production WSGI server
+
+# Performance
+orjson==3.9.7                 # Fast JSON serialization (2x faster than stdlib)
+
+# Logging
+python-json-logger==2.0.7     # JSON log formatting
